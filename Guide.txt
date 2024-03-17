@@ -1,0 +1,28 @@
+The following is the step by step manual to run the code : 
+
+1. Run the first code cell. It will take sometime to import tortoise tts
+2. Run the second cell. It will again install rotatory_embedding due to dependency problem.
+3. Then u have to click run above the file and then select "Restart and clear cell outputs" to restart the file
+	this is due to some probelm with kaggle environment and the libraries being used .
+4. run the next cell
+5. Again the run the cell below that downloads tortoise tts again .
+6. Call the tortoise tts
+7. Install the whisper model for speech transcription
+8. Install moviepy
+9. Install googletrans 
+10. Call the libraries as mentioned
+11. First u have to include the mp4 videos avaliable in the dataset folder in order to run the code on the test dataset
+12. Run the next cell where the mp4 files are clipped into urdu and english seperate files
+13. Run the next cell where the audio is extracted from the mp4 files and saved in the kaggle/working direcory (automatically saved u dont have to do anything)
+14. Now call whisper (large) model to extract text from extracted audio 
+15. Run the next cell where text is extracted from audio we extracted earlier and saved into the same directory
+16. Now use googletrans to change your extracted text into your desired language for Dubbing.
+17. Now the further cells u have to paste the path for your specific person audio in the path in the third cell after the heading
+	"WE PRODUCE NEW AUDIO WITH TRAGET TEXT USING THE TORTOISE TTS"
+18. Now the dataframe has the new translated text, using iloc and select your specific text that u want to the audio to speak
+19. Now run the muted audio cell to mute the original urdu audio 
+20. Call the Wav2Lip Model 
+21. int the second cell after the Heading "Video Translation using Wav2Lip2" paste your muted audio path and your new audio path and run the cell
+22. Finally run the next 2 cells and you will have your new dubbed video displayed
+23. Also,commented code is avaliable in the last inorder to fine tune the Wav2Lip2 model
+24. Also, for more than one video , code is avaliabel at the end to concatenate them and save them
