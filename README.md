@@ -31,3 +31,4 @@ I was not able to find a direct Speech-to-Speech approach but will try to do it 
 ## Referrences
 1. The entire approach has been beautifully explained on Hugging Face in the Audio Procesing course. Following is the link : https://huggingface.co/learn/audio-course/en/chapter7/speech-to-speech
 2. Following is the link to the Coqui TTS : https://github.com/coqui-ai/TTS
+3. Follwing is the link for OpenAI's Whisper : https://github.com/openai/whisper
